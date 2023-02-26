@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog - Merve Temizer</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">BLOG -MERVE TEMİZER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">ANA SAYFA</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">HAKKIMDA</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">BUGÜNÜN GÖNDERİSİ</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">İLETİŞİM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-color:#dc8d2f">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>İkili başlatma ya da dual boot maceralarım</h1>
+                            <h2 class="subheading">Karşılaşılabilecek sorunlara çözümler</h2>
+                            <span class="meta">
+                                Gönderen
+                                <a href="#!">Merve Temizer</a>
+                                Şubat 4, 2023'te
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h2 class="section-heading">Ne gerek vardı?</h2>
+                    <span class="caption text-muted">Bir çok hem İngilizce hem Türkçe sayfada neyi nasıl yapacağınız anlatılıyor, bir de ben anlatayım.</span>
+                        <p>Bugünlerde hem Windows hem Linux kullanmak isteyen kimse kaldı mı? Windows geliştirici bilgisayarı gibi bir seçenek kullanmıyor Windows indirme seçeneklerine bakığınızda. Linux ise AutoDesk veya Adobe yazılımları kullandırmak konusunda Wine programına mahkum bırakıyor sizi hala. Yoksa Adobe ve AutoDesk sizi Windows'a mı mahkum bırakıyor demeliydim? Neyse bugün politika yapmak yerine ikili başlatma ya da dual-boot yapma çabalarım sırasında karşıma çıkanları ve bunların üstesinden geliş maceramı paylaşmak istiyorum.</p>
+                        <p></p>
+                        <h2 class="section-heading">Neye ihtiyacınız var?</h2>
+                        <p>Öncelikle bir Windows kalıbı yani ".iso" uzantılı bir dosya indirdim Windows'un sitesinden. Bir üniversite öğrencisi olduğum için etkinleştirme ya da activasyon için endişelenmeme gerek yoktu, yani bu yazıda yasa dışı yani illegal bir Windows kurulum yolu bulmayacaksınız. Windows için ".iso" dosyası indirdikten sonra bu kalıbı bilgisayarımda sadece bir Ubuntu yüklü olduğu için WoeUSB diye bir yazılım kullandım, 16 GB'lik bir USB belleği, Windows kurulum diski olarak kullanmak için. Disk imajını yani ".iso" dosyasını bir disk gibi görüp içinden çıkarılacakları kopyalamanıza izin veren programlardan değildi bu. O yöntemi denediğim halde başarısız olduğum için WoeUSB kullandım. Disk imajınızı yani ".iso" dosyanızı güzel bir şekilde gösterip, USB belleğinizi de yerini seçmenize büyük olasılıkla gerek kalmadan kullanabiliyorsunuz.</p>
+                        <img class="img-fluid" src="../post-imgs/dual-boot/woe-usb.png" alt="..." />
+                        <p></p>
+                        <h2 class="section-heading">BIOS ile mücadelenizde kolaylıklar dilerim.</h2>
+                        <p>Disk kalıbınız USB belleğinize yazıldıktan sonra bilgisayarınızı BIOS denilen kurulum modunda başlatıp, Boot menüsü altında, External Disk gibi bir seçeneği en üst konuma ekranda görebileceğiniz yönergeleri kullanarak getirmeniz gerekiyor. BIOS modunda bir ekran görüntüsü alma seçeneği olmadığı için bunu görüntüyle paylaşamıyorum. Ancak bilgisayarınızın bir Assist tuşu varsa veya Del+F2 ya da Del+F8 gibi kombinasyonları kullanarak BIOS kurulumunuza erişip, sonrasında menülerde ok tuşlarıyla ilerleyerek yolunuzu bulmanız için size kolaylık diliyorum.</p>
+                         <p></p>
+                        <h2 class="section-heading">Windows kendi sistem başlatıcısını diskin başına yazar.</h2>
+                        <p>Zaten bütün mevzu Windows'un hadsizliğidir. Yine de kendisinden vazgeçmememiz için elinden geleni yapar. Dolayısıyla kendi sistem başlatıcısını diskin başına yazdığı için sonrasında Linux kurulumunuzun yöneticisi olan GRUB kayıtlarını bir daha diskin en başına sizin kaydederek güncellemeniz gerekecektir. Windows işletim sistemini kurarken ilerlemeyi yönetmenizin ardından, eğer kurulumun kendiliğinden Window sistem başlatıcısını diskin en başı olarak seçmesini engelleyecek bir hamle yapma olanağı bulursanız bunu hayata geçirin. Aksi takdirde bir Live yani canlı DVD veya USB belleğe ihtiyacınız olması olası.</p>
+                        <p></p>
+                        <h2 class="section-heading">Diskinizi derleyip toplamak için bir Live USB yapmaya daha ihtiyaç var.</h2>
+                        <p>
+                        Live USB yapmak için ben bir Lubuntu ".iso" su indirdim. Son zamanlarda Lubuntu stratejisi değişmiş olacak ki karşıma yaklaşık 2,5 GB boyutunda bir ISO dosyası çıktı. Yine de live, yani canlı, yani sabit diskinize kurulum gerektirmeden çalışıp, disk bölmenize izin verecek bir yazılım olduğu için ve Ubuntu kullanıcılığım nedeniyle kendisine duyduğum sempati dolayısıyla, Lubuntu'lu bir disk yaptım.
+                        </p>
+                          <p>
+                          Lubuntu'lu Live diskinizi Windows veya Ubuntu ortamınızda yazdıktan sonra, daha önce Windows kurarken yaptığınız gibi sisteminizi yine External Disk seçeneğiyle USB diskinizden veya DVD'nizden başlatmanız gerekiyor. Bu sayede Lubuntu'nun Live usage seçeneğini kullanarak sisteminizin disk görünümünü şekillendirebilirsiniz veya bir Linux başlatıcısı olan GRUB'u ekleyebilirisiniz.
+                          İşte Lubuntu'dan bir görünüm:
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_screen.jpg" alt="..." />
+                          <p></p>
+                          <p>
+                          Lubuntu kullanırken, Windows'un kurulu olduğunu tahmin ettiğim için dd komutu ile bir kopylama gerçekleştirip, diskin en başındaki bölmeyi Windows'un hemen öncesindeki bölmeye kopyalamayı denedim, ancak hiçbir şey sandığım gibi gitmeyince bütün Windows kurma işlemini baştan yapmam gerekti, neyse ki bazı silinmesini istemeyeceğim dosyaların bulunduğu Ubuntu kurulumuma bir zarar vermedim.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_try_dd.jpg" alt="..." />
+                          <p></p>
+                          <p>
+                          Lubuntu ile disklerin durumunu incelemek için fdisk -l komutu kullandım.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_fdisk_l.jpg" alt="..." />
+                          <p></p>
+                          
+                           <p>
+                          Lubuntu ile disklerin durumunu incelemek için yönetimsel araçların altında bulunabilecek KDE Partition Tool'u da kullandım.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_kde_boot_partition.jpg" alt="..." />
+                          <p></p>
+                          <h2 class="section-heading">"Canonical path of /cow" sorunu için kurulumu tekrarladım.</h2>
+                           <p>
+                          Lubuntu ile sda diski mount edip, GRUB sistemini bu diske kurmaya çalıştığımda aşağıdaki şekilde hatalı bir sonuç ortaya çıktı.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_windows_cache_error.jpg" alt="..." />
+                          <p></p>
+                          
+                           <p>
+                          Bu çabayı sarfederken anladığım, Windows'un hemen öncesindeki kısımın da bir birincil kısım olarak bölünmesi gerektiğiydi. Eğer windows öncesi kısmı yani benim pre-windows diye adlandırdığım kısmı ve Windows'un asıl kurulu olduğu kısmı tek bir logical partition içinde bölümleyip bu şekilde Windows kurulumunu yaparsanız, ne yazık ki benim gibi işlemi tekrarlamak ve en fazla 4 parçaya izin verilen bir sistemde yine sadece ikinci işletim sistemi olarak kullanmak durumunda kalıyorsunuz. Hem de kurulumu ikinci kez beklemek durumunda kalıyorsunuz. Aşağıdaki "cow error" sonucuda GRUB kurmaya çalışırken aldığım hata.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_grub_install_cow_error.jpg" alt="..." />
+                          <p></p>
+                          <h2 class="section-heading">"chrootdir" adında geçici bir dizin gerekti.</h2>
+                          <p>
+                          Her şeyi ikinci kez tekrar ederken, GRUB güncellemesine hazırlık olarak bir chrootdir dizini meydana getirdim.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_mkdir_chrootdir.jpg" alt="..." />
+                          <p></p>
+                           <p>
+                          Her şeyi ikinci kez tekrar ederken, sda diski içindeki dosyaları geçici bir chrootdir dizinine aşağıdaki şekilde bağlamanız gerekiyor.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_add_sda_dirs_chrootdir.jpg" alt="..." />
+                          <p></p>
+                         <p>
+                          "chrootdir" adlı bir dizine sda1 altındaki her alt dizini bağladıktan sonra root kullanıcısı olup, GRUB kayıtlarını tekrar kuruyoruz.
+                          
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/dual-boot/lubuntu_su_chroot_update_grub.jpg" alt="..." />
+                          <p></p>
+                          
+                            <p>
+                          Umarım benzer sıkıntıları yaşayan birine yol gösterici olur.
+                          
+                          </p>
+                          <p></p>
+                        
+                        <p>
+                        stackoverflow.com cevaplarına teşekkürlerimle ve başarılar, kolaylıklar dileklerimle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                             <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Telif hakkı saklıdır &copy; Merve Temizer 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

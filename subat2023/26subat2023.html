@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog - Merve Temizer</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">BLOG -MERVE TEMİZER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">ANA SAYFA</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">HAKKIMDA</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">BUGÜNÜN GÖNDERİSİ</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">İLETİŞİM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-color:#998877">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Yereldeki belgeleri uzak bir depoyla eşleştirmek</h1>
+                            <h2 class="subheading">Karşılaşılabilecek sorunlara çözümler</h2>
+                            <span class="meta">
+                                Gönderen
+                                <a href="#!">Merve Temizer</a>
+                                Şubat 26, 2023'te
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                    
+                    
+                    <h2 class="section-heading">Başlarken dizin ve depolar ne durumdaydı?</h2>
+                    <span class="caption text-muted">Git, kullanmayı öğrendiğinizde işleri kolaylaştırır.</span>
+                      
+                         <p>
+                          Uzun bir süre önce yani bir kaç ay önce bir git deposu yapmıştım ancak içinde hiç kod veya belge yoktu. Github'da bir git deposu(repository) vardı ve bir de geliştirme yapılan bilgisayarda kodlar bulunan dizin vardı ve bunların birbirinden herhangi şekilde bir haberi yoktu.
+                          
+                          
+                          </p>
+                          <p>
+                          Başlarken yerel dizin şu şekildeydi:
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/git_init/img_00.png" alt="..." />
+                          
+                          <h2 class="section-heading">Ne yapılması gerekiyordu?</h2>
+                          <p>
+                          Geliştirme yapılan bilgisayardaki dizinde kodlar ve belgeler güncellendikçe yani yenileri yazıldıkça, git deposunun güncellenmesi ve bunun hangi git işlemleriyle yapılacağının bilinmesi gerekiyordu. İlk adımlarda bazı yanlışlıklar oldu ve bunlar giderildi. Macera da bu şekilde ortaya çıktı aslında.
+                          </p>
+                          <p>
+                          Başlangıçta git deposuna eklenmek istenen dizinleri içeren dizinin içindeyken terminal açılıp "git init" çalıştırıldı.
+                          </p>
+                          <img class="img-fluid" src="../post-imgs/git_init/img_01.png" alt="..." />
+                          <h2 class="section-heading">Yerel dizini bir git deposu haline getirmek gerekir.</h2>
+                          
+                          <p>                      
+                          Bu sayede dizin içinde ".git" adlı bir dizin meydana geldi.
+                          
+                          Ardından git master dala ayarlandı:
+                          
+                          "git config --global init.defaultBranch master"
+
+                          </p>
+                         <img class="img-fluid" src="../post-imgs/git_init/img_02.png" alt="..." />                         
+                        
+                                 <h2 class="section-heading">Yerel dizine uzaktaki depo hakkında bilgi vermek gerekir.</h2>
+                          
+                          <p>                      
+                          Yanlışa örnek, bir deneme yanılma kod parçası:
+                          
+                          "git remote git@github.com:mervetemizer41/learnJava.git"
+
+			Bu çalıştırıldığında git'in nasıl kullanılması gerektiği konusunda bir dönüş alındı:
+                          </p>
+                         <img class="img-fluid" src="../post-imgs/git_init/img_03.png" alt="..." /> 
+                          <p>
+                          Hata giderilip 
+                          "git remote add origin git@github.com:mervetemizer41/learnJava.git"
+
+			komutu çalıştırıldı:
+			</p>
+			<img class="img-fluid" src="../post-imgs/git_init/img_04.png" alt="..." /> 
+			<p>
+			Böylece sorun çözülmüş oldu, artık uzaktaki(remote) depo hakkında yerel dizinin bir bilgisi var denilebilir, ancak yine de sorunlarla karşılaşılacak ve ilerleyen adımlarda bunlar giderilmeye çalışılacaktır.
+                        </p>
+                        
+                        <h2 class="section-heading">git'in dizinlerden haberinin olması gerekiyor.</h2>
+                        <p>
+			Hangi dizinlerinin eş zamanlı çalışması isteniyorsa bunlar git'e aşağıdaki şekilde ekleniyor:
+                        </p>
+                        
+                        <p>
+                        "git add src"
+                        </p>
+                        <img class="img-fluid" src="../post-imgs/git_init/img_05.png" alt="..." /> 
+                        <p>
+                        "git add doc"
+                        </p>
+                        <img class="img-fluid" src="../post-imgs/git_init/img_06.png" alt="..." />
+                        
+                        <h2 class="section-heading">git'e değişikliklerin işlenmesi gerekiyor.</h2>
+                        <p>
+                        Bunların git'e işlenmesi gerekiyor "commit" kullanılarak, şu şekilde bir komutla:
+                        
+                        git commit -m "Nearly initialization files"
+                        </p>
+                        <img class="img-fluid" src="../post-imgs/git_init/img_07.png" alt="..." /> 
+                        
+                         <h2 class="section-heading">Değişikliklerin uzak depoya itilmesi gerekiyor.</h2>
+                        <p>
+                        Bunların git'e işlenmesi gerekiyor "commit" kullanılarak, şu şekilde bir komutla:
+                        
+                        git commit -m "Nearly initialization files"
+                        </p>
+                        
+                        <img class="img-fluid" src="../post-imgs/git_init/img_08.png" alt="..." /> 
+                        
+                        <h2 class="section-heading">Yerel depoyu kendi başına başlatmak sorun ortaya çıkardı.</h2>
+                        <p>
+                        There isn't anything to compare.
+                        </p>
+                        <p>
+                        Bu sonuç, git'e uzak depodan haber vermek konusunda bir yanlışlık yapıldığını veya uzak deponun yereldekinden hiç haberinin olmadığını söylüyor.
+                        </p>
+                        <img class="img-fluid" src="../post-imgs/git_init/img_09.png" alt="..." /> 
+                        <p>
+                         Yani "git push" ile itilen veri ve uzaktaki dal o kadar birbirinden bağımsız ki karşılaştırılacak bir şey bulunamamamış.
+                        </p
+                        <p>
+                        Bu sonuç, git'e uzak depodan haber vermek konusunda bir yanlışlık yapıldığını veya uzak deponun yereldekinden hiç haberinin olmadığını söylüyor. Yani "git push" ile itilen veri ve uzaktaki dal o kadar birbirinden bağımsız ki karşılaştırılacak bir şey bulunamamamış.
+                        </p>
+                        
+                        <p>
+                        Aklımıza gelen ilk yöntem yereldeki ".git" dizinini yok etmek, bunu yok ederek işleri halledebileceğimizi öğrenmek de bir başarı ancak gerçek dünyada işler böyle yürümüyor, farkında olmak lazım. Yerel ".git" dizinini yok etmeden bir yolu bulunabilir.
+                        </p>
+                        
+                         <img class="img-fluid" src="../post-imgs/git_init/img_10.png" alt="..." />
+                        
+                        
+                        <p>.git dizinini sil baştan meydana getirmenin kolay yolu tercih edildi.</p>
+                        
+                         <img class="img-fluid" src="../post-imgs/git_init/img_11.png" alt="..." />
+                        
+                        <p>Aynı şeyi yapıp farklı sonuç bekliyorum ancak ".git" dizinini silmeden yanlışlığı düzeltebilecek olmayı öğrendim.</p>
+                       
+                        <img class="img-fluid" src="../post-imgs/git_init/img_12.png" alt="..." />
+                         
+                         <p>Adımları bütünüyle tekrar etmek gerekti.</p>
+                         
+                         <img class="img-fluid" src="../post-imgs/git_init/img_13.png" alt="..." />
+                        
+                        <p>Bu sefer dizin silmeden çözümü öğrenme yolu açılmış oldu. Neyse ki sorun fazlalaşıp, karmaşıklaşmamış, hala aynı sorun devam ediyor:</p>
+                        
+                        <img class="img-fluid" src="../post-imgs/git_init/img_error_again.png" alt="..." />
+                        <h2 class="section-heading">Dizin yok etmeden sorun çözülebilmesi git'in güzel tarafı.</h2>
+                         
+                          <p>Stackoverflow.com cevabına teşekkürler, işe yaradı:</p>
+                        
+                        <img class="img-fluid" src="../post-imgs/git_init/img_so_support.png" alt="..." />
+                         
+                         <p>Önce işleme yani "commit" de tekrar edildi ardından "git push"tan önce şu şekilde çalıştırıldı:</p>
+                         
+                         <p>"git checkout master"</p>
+                         
+                         <img class="img-fluid" src="../post-imgs/git_init/img_14.png" alt="..." />
+                        
+                        <p>"git branch main master -f"
+                        "git checkout main"</p>
+                        
+                         <img class="img-fluid" src="../post-imgs/git_init/img_15.png" alt="..." />
+                         
+                         <p>"git push origin main -f"</p>
+                         
+                         <img class="img-fluid" src="../post-imgs/git_init/img_16.png" alt="..." />
+                         
+                         <h2 class="section-heading">Yereldeki dizinler artık uzakta ama eski "push" lar hala bir sorun.</h2>
+                         
+                         <p>Önceki eş zamanlılaştırma sırasında meydana gelen sorunu devam ediyor:</p>
+                         
+                         <img class="img-fluid" src="../post-imgs/git_init/img_17.png" alt="..." />
+                         
+                         <p>Dal yani "branch"ın bir yedeğini yeni bir dal ile alıp "git reset" çalıştırılıyor:</p>
+                         <p>"git branch backup-master"</p>
+                         <p>"git reset --hard origin/master"</p>
+                         
+                         <img class="img-fluid" src="../post-imgs/git_init/img_18.png" alt="..." />
+                         
+                         Sonra bu yedek dal silinebilir.
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                             <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Telif hakkı saklıdır &copy; Merve Temizer 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
